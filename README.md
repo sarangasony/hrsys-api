@@ -16,3 +16,10 @@ Health endpoint: `GET http://localhost:3000/api/v1/health`
 The health endpoint runs `SELECT 1` through Prisma and reports the database result. PostgreSQL must be running with the values in `.env.example` (the root Docker Compose file provides those defaults).
 
 Authentication is intentionally only a status stub at `GET /api/v1/auth/status`; login is scheduled for Day 7.
+
+## OpenAPI
+
+The API uses the Nest 11-compatible Swagger package.
+
+- Swagger UI: [http://localhost:3000/api/docs](http://localhost:3000/api/docs)
+- OpenAPI JSON: [http://localhost:3000/api/docs-json](http://localhost:3000/api/docs-json)
